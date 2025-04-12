@@ -106,4 +106,7 @@
       max-width: 90%;
       margin: auto;
     }
+      #qr img {
+      width: 70%;
+    }
 }
