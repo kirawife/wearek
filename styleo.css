@@ -578,3 +578,12 @@ border: #adaec560 dotted 7px;
   flex-direction: column;
   padding: 0;
 }
+#qr {
+  margin: auto;
+  padding: 10%;
+  text-align: center;
+}
+#qr img {
+  margin: auto;
+  width: 30%;
+}
