@@ -1,6 +1,4 @@
 
-@import url(
-"https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -24,8 +22,11 @@ body {
   background-color: var(--background-color4);
   max-width: 100%;
   overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
-
+p {
+  color: white;
+}
 header {
   height: 70px;
   width: 100vw;
@@ -37,6 +38,88 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+body.dark {
+  --background-color1: #124f68b9;
+  --background-color2: #789dd8;
+  --background-color4: #d5dbffe4;
+  --Border-color: #71ce7af3;
+  color: #000000;
+}
+body.dark header{
+  box-shadow: 1px 5px 15px rgba(44, 24, 172, 0.825);
+}
+body.dark p{
+  color: #000000;
+
+}
+
+button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  background: #fff;
+  border-radius: 34px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: 
+    background-color 0.35s ease, 
+    color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.3s ease;
+  user-select: none;
+  outline: none;
+}
+
+body.dark button {
+  background: #1e2f3a;
+  color: #ddd;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+button:hover {
+  box-shadow: 0 16px 30px rgba(0,0,0,0.22);
+  transform: translateY(-6px);
+}
+
+button:active {
+  transform: translateY(-2px) scale(0.97);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
+
+.icon-wrapper {
+  width: 36px;
+  height: 36px;
+  background-color: #f0f2f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+body.dark .icon-wrapper {
+  background-color: #2a3b47;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+svg.icon {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+  transition: fill 0.35s ease;
+}
+body.dark svg.icon {
+  fill: #ccc;
 }
 .icn {
   height: 30px;
@@ -130,6 +213,11 @@ header {
   background-color: #16577d;
   cursor: pointer;
 }
+body.dark .nav-option:hover {
+  border-left: 5px solid #151623;
+  background-color: #4aa55c;
+  cursor: pointer;
+}
 .nav-img {
   height: 30px;
   margin: 7px;
@@ -143,8 +231,13 @@ header {
   font-family: ugu;
   letter-spacing: 2px;
   font-size: 12px;
+  color: #000000;
 }
-
+body.dark #hh {
+  font-size: 14px;
+  font-weight: 800;
+  color: #000000;
+}
 .option1 {
     border-left: 5px solid #04043ea0;
     background-color: var(--Border-color);
@@ -182,6 +275,14 @@ a {
   margin-left: 500px;
   margin-top: -300px;
 }
+body.dark #right {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
+  padding: 2%;
+  width: 55%;
+  font-weight: 700;
+  font-size: 30px;
+}
 #right h2 {
   color: #d131d4;
   font-size: 27px;
@@ -193,7 +294,6 @@ a {
 #right p{
   text-align: left;
   text-align: justify;
-  color: #ffffff;
   font-size: 18px;
   font-family: ugu;
   letter-spacing: 2px;
@@ -206,6 +306,10 @@ a {
   padding: 10px;
   font-family: ugu;
   letter-spacing: 2px;
+}
+body.dark h1 {
+  color: #1e48bd;
+  background-color: #c3cadc9e;
 }
 #box {
   padding: 5px 0px 5px 20px;
@@ -234,6 +338,14 @@ a {
   margin-left: 60px;
   margin-top: -300px;
 }
+body.dark #right1 {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
+  padding: 2%;
+  width: 48%;
+  font-weight: 700;
+  font-size: 30px;
+}
 #right1 h2 {
   color: #5ad54c;
   font-size: 27px;
@@ -245,7 +357,6 @@ a {
 #right1 p{
   text-align: left;
   text-align: justify;
-  color: #ffffff;
   font-size: 16px;
   font-family: ugu;
   letter-spacing: 2px;
@@ -273,6 +384,14 @@ a {
   margin-left: 500px;
   margin-top: -300px;
 }
+body.dark #right2 {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
+  padding: 2%;
+  width: 55%;
+  font-weight: 700;
+  font-size: 30px;
+}
 #right2 h2 {
   color: #e64040;
   font-size: 27px;
@@ -284,7 +403,6 @@ a {
 #right2 p{
   text-align: left;
   text-align: justify;
-  color: #ffffff;
   font-size: 16px;
   font-family: ugu;
   letter-spacing: 2px;
@@ -315,6 +433,13 @@ a {
   margin-left: 60px;
   margin-top: -380px;
 }
+body.dark #right3 {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(10px);
+  padding: 2%;
+  font-weight: 700;
+  font-size: 30px;
+}
 #right3 h2 {
   color: #4990ee;
   font-size: 27px;
@@ -326,7 +451,6 @@ a {
 #right3 p{
   text-align: left;
   text-align: justify;
-  color: #ffffff;
   font-size: 16px;
   font-family: ugu;
   letter-spacing: 2px;
