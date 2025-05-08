@@ -18,6 +18,14 @@
                 alt="">
             
         </div>
+        <button id="themeToggle" aria-label="Переключить тему">
+          <div class="icon-wrapper" aria-hidden="true">
+            <svg class="icon" id="icon" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
+            </svg>
+          </div>
+          <span id="btnText">Темная тема</span>
+        </button>
     </header>
     <div class="main-container">
 
@@ -28,7 +36,7 @@
                         <a href="index.html"><img src="img/artificial-intelligence_820855.png"
                             class="nav-img" 
                             alt=""></a>
-                        <a href="index.html"><h3>История</h3></a>
+                        <a href="index.html"><h3 id="hh">История</h3></a>
                     </div>
 
                     <div class="option2 nav-option">
@@ -36,7 +44,7 @@
 "img/mona-lisa_3199931.png"
                             class="nav-img" 
                             alt=""></a>
-                        <a href="iskusstvo.html"><h3>  Искусство</h3></a>
+                        <a href="iskusstvo.html"><h3 id="hh">Искусство</h3></a>
                     </div>
 
                     <div class="nav-option option3">
@@ -44,7 +52,7 @@
 "img/user_17827179.png"
                             class="nav-img" 
                             alt=""></a>
-                        <a href="osebe.html"><h3> О себе</h3></a>
+                        <a href="osebe.html"><h3 id="hh">О себе</h3></a>
                     </div>
                 </div>
             </nav>
@@ -61,8 +69,8 @@
                     <img src="img/puh.jpg" alt="каой-нибудь приколчик">
                 </div>
                 <div id="bbot">
-                    <a href="https://t.me/wearek11"><button><img src="img/telegram.png" alt=""></button></a> 
-                    <a href="https://vk.com/wearek"><button><img src="img/vk.png" alt=""></button></a>
+                    <a href="https://t.me/wearek11" id="cc"><button><img src="img/telegram.png" alt=""></button></a> 
+                    <a href="https://vk.com/wearek" id="cc"><button><img src="img/vk.png" alt=""></button></a>
                 </div>    
                 <div id="licei">
                     <img src="img/licei.webp" alt="я с лицемм">
@@ -70,15 +78,31 @@
                 </div>
                 <div id="project">
                     <h3>О проекте</h3>
-                    <p>Для этой работы я выбрала темы истории и искусства. Тема истории меня заинтересовала, так как мне всегда было интересно узнать, как люди пришли к такому скачку в технологиях, и с чего начинался этот интересный и незаконченный путь развития нейросетей. Тема искусства привлекает меня не только в нейросетях, но и в жизни. Поэтому применения нейросети в различных ответвлениях искусства меня очень заинтересовала. Но нейросети также активно применяются и в других жизненных областях: в промышленности, медицине, образовании и т.п. Благодаря развитию искусственного интеллекта происходит и развитие во всех взаимосвязанных отраслях, поэтому можно сказать, что за развитием нейросетей идёт будущее. <br> 
-                    Для создания этого проекта я использовала HTML для основного кода, CSS для стилей и адаптации к мобильным устройствам, а также JAVA Srcipt для панели навигации и галереи. Данные языки я изучала как на уроках и дополнительных курсах, так и с помощью приложения, которое помогло мне разобраться в скриптах. </p>
+                    <p>Для этой работы я выбрала темы истории и искусства. Тема истории меня заинтересовала, так как мне всегда было интересно узнать, как люди пришли к такому скачку в технологиях, и с чего начинался этот интересный и незаконченный путь развития нейросетей. Тема искусства привлекает меня не только в нейросетях, но и в жизни. Поэтому применения нейросети в различных ответвлениях искусства меня очень заинтересовала. Но нейросети также активно применяются и в других жизненных областях: в промышленности, медицине, образовании и т.п. Благодаря развитию искусственного интеллекта происходит и развитие во всех взаимосвязанных отраслях, поэтому можно сказать, что за развитием нейросетей идёт будущее.</p> <br> 
+                    <nav class="accordion arrows">
+                        <input type="radio" name="accordion" id="cb1" />
+                        <section class="box">
+                          <label class="box-title" for="cb1">Цель</label>
+                          <label class="box-close" for="acc-close"></label>
+                          <div class="box-content">Click on an item to open. Click on its header or the list header to close.</div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb2" />
+                        <section class="box">
+                          <label class="box-title" for="cb2">Задачи</label>
+                          <label class="box-close" for="acc-close"></label>
+                          <div class="box-content">Add the class 'arrows' to nav.accordion to add dropdown arrows.</div>
+                        </section>
+                    
+                        <input type="radio" name="accordion" id="acc-close" />
+                      </nav>
+                    <p>Для создания этого проекта я использовала HTML для основного кода, CSS для стилей и адаптации к мобильным устройствам, а также JAVA Srcipt для панели навигации и галереи. Данные языки я изучала как на уроках и дополнительных курсах, так и с помощью приложения, которое помогло мне разобраться в скриптах. </p>
                     <div id="pri"><img src="img/mememe.jpg" alt="тут я такая ого шок">
                     
                     <img src="img/meme.jpg" alt=""></div>
                 </div>
                 <div id="opr">
                     <h2>Опрос</h2>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSexMggstpuEMChk0xsXO5Y3_pgcMiVU73XwlrnFcphrnTVabQ/viewform?usp=header"><button class="button">Пройти</button></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSexMggstpuEMChk0xsXO5Y3_pgcMiVU73XwlrnFcphrnTVabQ/viewform?usp=header" id="oo"><button class="button">Пройти</button></a>
                 </div>
                 
                     <div id="zag"><h2>Результаты опроса</h2></div>
@@ -179,6 +203,11 @@
                             <circle class="unit6" r="15.9" cx="50%" cy="50%"></circle>
                           </svg>
                     </div>
+                </div>
+                <div id="pobeditel">
+                  <div id="pp"><img src="img/vks.png" alt="">
+                  <p>Также с данным проектом я заняла первое место во всероссийском конкурсе сайтов “Сделай сайт своими руками” в номинации «10-11 класс» 27 марта 2025 года. </p></div>
+                  <img src="img/skr.jpg" alt="" style="width: 90%; text-align: center;" id="ii">
                 </div>
                 <div id="istoch">
                     <h3>Источники</h3>
