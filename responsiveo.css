@@ -106,7 +106,36 @@
       max-width: 90%;
       margin: auto;
     }
-      #qr img {
+    #qr img {
       width: 70%;
+    }
+    body.dark #project {
+      width: 100%;
+    }
+    .accordion {
+      width: 80%;
+    }
+    #pp {
+      flex-direction: column;
+      width: 100%;
+      margin: 0%;
+      padding: 2px;
+      align-items: center;
+    }
+    #pp p {
+      width: 100%;
+      margin: auto;
+    }
+    #pp img {
+      width: 50%;
+      text-align: center;
+      margin: 3%;
+    }
+    #ii {
+      margin-top: 5%;
+      width: 100%;
+    }
+    body.dark #meinfo {
+      width: 100%;
     }
 }
